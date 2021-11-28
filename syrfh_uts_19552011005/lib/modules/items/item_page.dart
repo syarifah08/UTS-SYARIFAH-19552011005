@@ -86,23 +86,23 @@ class _ItemPageState extends State<ItemPage> {
       children: [
         Center(
           child: Container(
-            width: 360,
+            width: 330,
             height: 200,
             decoration: BoxDecoration(shape: BoxShape.rectangle,borderRadius: BorderRadius.circular(15)),
             child: Stack(
                 children: [
                   Container(
-                    width: 335,
+                    width: 300,
                     height: 170,
                     decoration: BoxDecoration(shape: BoxShape.rectangle, color: Color(int.parse(item.color)),borderRadius: BorderRadius.circular(15)),
                   ),
                   Container(
-                    padding: EdgeInsets.only(top: 15, left: 15),
+                    padding: EdgeInsets.only(top: 20, left: 20),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text("Limited Edition", style: TextStyle(fontSize: 11,color: Colors.white)),
-                        SizedBox(height: 10,),
+                        SizedBox(height: 15,),
                         Row(
                           children: [
                             Text("Instax", style: TextStyle(color: Colors.white)),
@@ -110,7 +110,7 @@ class _ItemPageState extends State<ItemPage> {
                             Text(item.name, style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),)
                           ],
                         ),
-                        SizedBox(height: 10,),
+                        SizedBox(height: 20,),
                         Text(item.price, style: TextStyle(fontSize: 25,color: Colors.white, fontWeight: FontWeight.bold)),
                         SizedBox(height: 10,),
                         ElevatedButton(
@@ -133,7 +133,7 @@ class _ItemPageState extends State<ItemPage> {
           ),
         ),
         Container(
-          padding: EdgeInsets.only(right: 15, top: 20),
+          padding: EdgeInsets.only(right: 15, top: 23),
           alignment: Alignment.centerRight,
           child: Image.asset(
             item.url, width: 125,
